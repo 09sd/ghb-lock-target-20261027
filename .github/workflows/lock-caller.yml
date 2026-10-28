@@ -1,0 +1,10 @@
+name: Lock caller
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  call-child:
+    uses: ./.github/workflows/lock-child.yml
