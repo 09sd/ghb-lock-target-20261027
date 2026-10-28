@@ -1,0 +1,7 @@
+name: Upstream identity action
+description: Controlled fork-impostor lockfile probe
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "GHB_UPSTREAM_ACTION_SAFE_20261027"
