@@ -1,0 +1,8 @@
+name: Remote lock caller
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  call-remote:
+    uses: 09sd/ghb-lock-source-20261027/.github/workflows/remote-child.yml@main
