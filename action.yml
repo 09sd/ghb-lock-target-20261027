@@ -1,7 +1,7 @@
-name: Upstream identity action
-description: Controlled fork-impostor lockfile probe
+name: Fork-only impostor action
+description: Controlled fork-only commit marker
 runs:
   using: composite
   steps:
     - shell: bash
-      run: echo "GHB_UPSTREAM_ACTION_SAFE_20261027"
+      run: echo "GHB_FORK_ONLY_IMPOSTOR_EXECUTED_20261027"
