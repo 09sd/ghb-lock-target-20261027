@@ -1,0 +1,16 @@
+name: Lock child
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  run-locked-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke movable action
+        uses: 09sd/ghb-lock-source-20261027@main
+      - name: Child completed
+        run: echo "GHB_LOCK_CHILD_DONE_20261027"
