@@ -1,0 +1,11 @@
+name: Identity lock control
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  run-identity-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke identity action
+        uses: 09sd/ghb-lock-identity-20261027@main
