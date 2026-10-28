@@ -1,0 +1,11 @@
+version: v0.0.3
+workflows:
+  .github/workflows/lock-child.yml:
+    - 09sd/ghb-lock-source-20261027@main
+  .github/workflows/lock-caller.yml: []
+dependencies:
+  09sd/ghb-lock-source-20261027@main:
+    ref: main
+    commit: sha1-437a69acfcb5409686756e25dab6d213dcaef2af
+    owner_id: 183424556
+    repo_id: 1436490099
