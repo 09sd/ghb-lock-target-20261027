@@ -5,9 +5,16 @@ workflows:
   .github/workflows/lock-caller.yml: []
   .github/workflows/remote-caller.yml:
     - 09sd/ghb-lock-source-20261027@main
+  .github/workflows/identity-lock.yml:
+    - 09sd/ghb-lock-identity-20261027@main
 dependencies:
   09sd/ghb-lock-source-20261027@main:
     ref: main
     commit: sha1-0c9e38f5b7399a7e667abcf13b044a2bcc5ec084
     owner_id: 183424556
     repo_id: 1436490099
+  09sd/ghb-lock-identity-20261027@main:
+    ref: main
+    commit: sha1-5c596ce7fb3af79d9c9ebe816f8cce0d45bca809
+    owner_id: 183424556
+    repo_id: 1436501669
